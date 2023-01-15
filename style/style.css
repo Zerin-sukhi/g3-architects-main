@@ -8,7 +8,6 @@
     padding: 0;
     overflow-x: hidden;
 }
-
 .background_color{
     background-color: rgba(255, 144, 14, 0.1);
 }
@@ -177,7 +176,7 @@ line-height: 26px;
 .button_three{
 background:var(--orange);
 border-radius: 8px;
-margin-left: 750px;
+margin-left: 780px;
 margin-top: -900px;
 width: 200px;
 height: 100px;
@@ -214,6 +213,7 @@ color: var(--gray);
     text-align: center;
     padding-top: 30px;
 }
+/* The Bonus part styles with transform and transition */
 .project_done_section_box:hover p{
     background-color: var(--orange);
     transition: width 1s, height 2s, transform 2s;
@@ -263,6 +263,7 @@ border-radius: 8px;
 text-align: center;
 padding-top: 50px;
 }
+/* responsive part for mobile ,which was mandatory */
 @media only screen and (max-width:576px) {
     .nav{
         display: grid;
