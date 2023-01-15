@@ -55,10 +55,11 @@ margin-top: 10px;
 .button_one{
     background: var(--orange);
     border-radius: 8px;
-    border-color: white;
+    border: none;
+    color: white;
     padding: 15px;
     margin-top: 10px;
-    margin-left:715px;
+    margin-left:45%;
     margin-bottom: 10px;
 }
 section>img{
@@ -277,10 +278,7 @@ padding-top: 50px;
         gap: 20px;
     }
     .button_one{
-        align-items: center;
-        text-align: center;
-        margin-left:  40%;
-        padding: auto;
+        margin-left:  35%;
     }
     section>img{
         width: 70%;
@@ -293,6 +291,7 @@ padding-top: 50px;
         gap: 10px;
         margin: 10%;
         padding: 10%;
+       
     }
     .image_grid img{
         height: 100%;
@@ -314,13 +313,13 @@ padding-top: 50px;
         width: 250px;
     }
     .card_section_image img{
-        width: 300px;
-        height: 400px;
+        width: 90%;
+        height: 90%;
         margin-left: 20%;
         margin-top: 30px;
     }
     .button_three{
-        margin-left: 95px;
+        margin-left: 25%;
         }
         .project_done_title{
             margin-left: 30px;
@@ -335,4 +334,19 @@ padding-top: 50px;
                 width: 70%;
                 margin: 15%;
                 }
+}
+/* I tried for tablet mode responsiveness. */
+@media only screen and (min-width:577px) and (max-width:992px){
+    .image_grid{
+        gap: 10px;
+        margin: 10%;
+        padding: 10%;
+    }
+    .grid_title, .grid_body, .button_two{
+        margin-right: 30px;
+    }
+    .button_three{
+        margin-left: 35%;
+        margin-top: -900px;
+        }
 }
