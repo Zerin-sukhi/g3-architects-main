@@ -1,0 +1,329 @@
+:root{
+    --orange:#FF900E;
+    --black:#131313;
+    --gray:#727272;
+}
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+.background_color{
+    background-color: rgba(255, 144, 14, 0.1);
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: 240px;
+    margin-right: 240px;
+}
+.nav_logo{
+    font-weight: 700;
+font-size: 45px;
+color: var(--black);
+padding-top: 50px;
+}
+ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding-top: 63px;
+}
+li>a{
+    text-decoration: none;
+}
+.banner{
+    margin-top: 100px;    
+}
+.banner_title{
+    font-weight: 700;
+font-size: 60px;
+font-family: 'Work Sans';
+}
+.banner_body, .sponsor_body{
+    padding-top: 10px;
+    color: var(--gray);
+}
+.banner_title, .banner_body, .sponsor_title, .sponsor_body{
+    text-align: center;
+}
+.sponsor_title{
+    font-weight: 700;
+font-size: 45px;
+margin-top: 10px;
+}
+.button_one{
+    background: var(--orange);
+    border-radius: 8px;
+    border-color: white;
+    padding: 15px;
+    margin-top: 10px;
+    margin-left:715px;
+    margin-bottom: 10px;
+}
+section>img{
+    width: 70%;
+    margin-left: 240px;
+    margin-right: 240px;
+    margin-bottom: 15px;
+}
+.section_flex{
+    display: flex;
+}
+.image_grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 24px;
+    border-radius: 8px;
+    margin-left: 301px;
+    margin-top: 70px;
+}
+.image_grid img{
+    height: 200px;
+    width: 200px;
+}
+.grid_title{
+    padding-left: 50px;
+    margin-top: 150px;
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 500;
+font-size: 45px;
+line-height: 53px;
+}
+.color_change_one{   
+color: var(--gray);
+}
+.color_change_two{
+color: var(--black);
+}
+.color_change_three{
+    color: var(--orange);
+}
+.grid_body{
+    font-family: 'Work Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 26px;
+padding-top: 24px;
+color: var(--gray);
+padding-left: 50px;
+}
+.button_two{
+    background: var(--orange);
+    color: white;
+    border-radius: 8px;
+    border-color: white;
+    padding: 15px;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+.card_section{
+    display: flex;
+    margin-left: 240px;
+    margin-right: 240px;
+    margin-top: 30px;
+}
+.card_section_first{
+    border-left: 5px solid var(--orange);
+    font-weight: 700;
+font-size: 45px;
+line-height: 53px;
+padding-left: 10px;
+}
+.card_section_second{
+    color: var(--gray);
+    width: 420px;
+font-family: 'Work Sans';
+font-weight: 400;
+font-size: 16px;
+line-height: 26px;
+padding-top: 10px;
+}
+.card_section_image img{
+    width: 500px;
+    height: 700px;
+    margin-left: 100px;
+}
+.card_section_description_option{
+    width: 400px;
+    box-shadow: 5px 10px 15px gray;border-radius: 10px;
+    margin-right: 70px;
+    margin-left: 15px;
+    margin-top: 20px;
+    padding-left: 15px;
+}
+.card_section_description_title{
+padding-bottom: 5px;
+font-weight: 600;
+font-size: 20px;
+}
+.card_section_desc_paragraph{
+    color: var(--gray);
+font-family: 'Work Sans';
+font-weight: 400;
+font-size: 16px;
+line-height: 26px;   
+}
+.button_three{
+background:var(--orange);
+border-radius: 8px;
+margin-left: 750px;
+margin-top: -900px;
+width: 200px;
+height: 100px;
+border: none;
+color: white;
+}
+.button_three span{
+    font-weight: 700;
+font-size: 40px;
+}
+.project_done_title{
+margin-left: 240px;
+}
+.project_done_title h1{    
+    font-weight: 700;
+font-size: 45px;
+margin-bottom: 10px;
+}
+.project_done_title p{
+    font-weight: 400;
+font-size: 16px;
+color: var(--gray);
+}
+.project_done_section{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.project_done_section_box{
+    border: 1px solid var(--orange);
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    padding-top: 30px;
+}
+.sponsor_logo_container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 50px;
+}
+.sponsor_logo_container img{
+    filter: grayscale(100%);
+}
+.owner_title, .owner_body{
+    text-align: center;
+    margin: 5px;
+}
+.owner_section img{
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+}
+.owner_section{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px auto;
+}
+.contact_form{
+    margin-left: 50px;
+}
+.contact_form input, .textarea{
+    margin: 5px;
+    padding: 15px;
+    border-radius: 8px;
+}
+.footer{
+height: 100px;
+margin-left: 240px;
+margin-right: 240px;
+margin-bottom: 100px;
+background: #ceb69a;
+border-radius: 8px;
+text-align: center;
+padding-top: 50px;
+}
+@media only screen and (max-width:576px) {
+    .nav{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        margin-left: 50px;
+        margin-right: 20px;
+    }
+    ul{
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(1 , 1fr);
+        gap: 20px;
+        padding-top: 20px;
+        margin-left: 90px;
+    }
+    .button_one{
+        margin-left:135px;
+        margin-bottom: 10px;
+    }
+    section>img{
+        margin-left: 95px;
+    }
+    .nav_logo, ul{
+        justify-content: center;
+    }
+    section>img{
+        width: 50%;
+        text-align: center;
+    }
+    .section_flex{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .image_grid{
+        gap: 10px;
+        margin-left: 25px;
+    }
+    .image_grid img{
+        height: 150px;
+        width: 150px;
+    }
+    .grid_title, .grid_body, .button_two{
+        margin-right: 30px;
+        margin-top: 10px;
+    }
+    .card_section{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-top: 30px;
+    }
+    .card_section_description_option{
+        width: 250px;
+    }
+    .card_section_image img{
+        width: 300px;
+        height: 400px;
+        margin-left: 10px;
+        margin-top: 30px;
+    }
+    .button_three{
+        margin-left: 95px;
+        }
+        .project_done_title{
+            margin-left: 30px;
+            }
+            .project_done_section, .sponsor_logo_container{
+                gap: 10px;
+            }  
+            .contact_form input, .textarea{
+                width: 70%;
+            }     
+            .footer{
+                width: 70%;
+                margin-left: 50px;
+                }
+}
