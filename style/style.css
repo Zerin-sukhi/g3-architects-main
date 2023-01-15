@@ -8,15 +8,14 @@
     padding: 0;
     overflow-x: hidden;
 }
+
 .background_color{
     background-color: rgba(255, 144, 14, 0.1);
 }
 .nav{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
-    margin-left: 240px;
-    margin-right: 240px;
 }
 .nav_logo{
     font-weight: 700;
@@ -27,6 +26,7 @@ padding-top: 50px;
 ul{
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
     padding-top: 63px;
 }
@@ -63,13 +63,19 @@ margin-top: 10px;
     margin-bottom: 10px;
 }
 section>img{
-    width: 70%;
-    margin-left: 240px;
-    margin-right: 240px;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+    /* width: 70%;
+    text-align: center; */
+    /* margin-left: 240px;
+    margin-right: 240px; */
     margin-bottom: 15px;
 }
 .section_flex{
     display: flex;
+    flex-wrap: wrap;
 }
 .image_grid{
     display: grid;
@@ -122,8 +128,10 @@ padding-left: 50px;
 }
 .card_section{
     display: flex;
-    margin-left: 240px;
-    margin-right: 240px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    /* margin-left: 240px;
+    margin-right: 240px; */
     margin-top: 30px;
 }
 .card_section_first{
@@ -145,7 +153,6 @@ padding-top: 10px;
 .card_section_image img{
     width: 500px;
     height: 700px;
-    margin-left: 100px;
 }
 .card_section_description_option{
     width: 400px;
@@ -207,6 +214,13 @@ color: var(--gray);
     text-align: center;
     padding-top: 30px;
 }
+.project_done_section_box:hover p{
+    background-color: var(--orange);
+    transition: width 1s, height 2s, transform 2s;
+}
+.project_done_section_box:hover img{
+    transform: rotate(-50deg);
+}
 .sponsor_logo_container{
     display: flex;
     justify-content: space-evenly;
@@ -253,30 +267,22 @@ padding-top: 50px;
     .nav{
         display: grid;
         grid-template-columns: repeat(1,1fr);
-        margin-left: 50px;
-        margin-right: 20px;
+        text-align: center;
     }
     ul{
         list-style: none;
         display: grid;
         grid-template-columns: repeat(1 , 1fr);
         gap: 20px;
-        padding-top: 20px;
-        margin-left: 90px;
     }
     .button_one{
-        margin-left:135px;
-        margin-bottom: 10px;
-    }
-    section>img{
-        margin-left: 95px;
-    }
-    .nav_logo, ul{
-        justify-content: center;
-    }
-    section>img{
-        width: 50%;
+        align-items: center;
         text-align: center;
+        margin-left:  40%;
+        padding: auto;
+    }
+    section>img{
+        width: 70%;
     }
     .section_flex{
         display: grid;
@@ -284,11 +290,12 @@ padding-top: 50px;
     }
     .image_grid{
         gap: 10px;
-        margin-left: 25px;
+        margin: 10%;
+        padding: 10%;
     }
     .image_grid img{
-        height: 150px;
-        width: 150px;
+        height: 100%;
+        width: 100%;
     }
     .grid_title, .grid_body, .button_two{
         margin-right: 30px;
@@ -297,6 +304,7 @@ padding-top: 50px;
     .card_section{
         display: grid;
         grid-template-columns: repeat(1,1fr);
+        width: 70%;
         margin-left: 40px;
         margin-right: 40px;
         margin-top: 30px;
@@ -307,7 +315,7 @@ padding-top: 50px;
     .card_section_image img{
         width: 300px;
         height: 400px;
-        margin-left: 10px;
+        margin-left: 20%;
         margin-top: 30px;
     }
     .button_three{
@@ -324,6 +332,6 @@ padding-top: 50px;
             }     
             .footer{
                 width: 70%;
-                margin-left: 50px;
+                margin: 15%;
                 }
 }
